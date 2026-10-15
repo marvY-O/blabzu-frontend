@@ -61,7 +61,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem clamp(1.25rem, 4vw, 4rem);
+  padding: calc(env(safe-area-inset-top, 0px) + 1.5rem) clamp(1.25rem, 4vw, 4rem) 1.5rem;
+  padding-left: calc(env(safe-area-inset-left, 0px) + clamp(1.25rem, 4vw, 4rem));
+  padding-right: calc(env(safe-area-inset-right, 0px) + clamp(1.25rem, 4vw, 4rem));
   position: relative;
   z-index: 2;
 }
@@ -83,8 +85,9 @@ body {
 [data-theme="dark"] .logo-dark { display: block; }
 
 .theme-toggle {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
   border-radius: 50%;
   border: 1px solid var(--border);
   background: var(--bg-elevated);
@@ -94,6 +97,7 @@ body {
   cursor: pointer;
   color: var(--text);
   transition: transform 0.2s ease, background 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .theme-toggle:hover { transform: scale(1.06); }
@@ -169,10 +173,11 @@ h1 .accent { color: var(--primary); }
   border: 1.5px solid var(--border);
   background: var(--bg-elevated);
   color: var(--text);
-  font-size: 0.98rem;
+  font-size: 1rem;
   font-family: var(--font);
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  min-height: 48px;
 }
 
 .email-input:focus {
@@ -183,6 +188,7 @@ h1 .accent { color: var(--primary); }
 .notify-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.45rem;
   background: var(--primary);
   color: #fff;
@@ -190,12 +196,14 @@ h1 .accent { color: var(--primary); }
   padding: 0.95rem 1.4rem;
   border-radius: 12px;
   font-weight: 700;
-  font-size: 0.98rem;
+  font-size: 1rem;
   font-family: var(--font);
   cursor: pointer;
   white-space: nowrap;
   box-shadow: var(--shadow);
   transition: background 0.2s ease, transform 0.15s ease;
+  min-height: 48px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .notify-btn:hover { background: var(--primary-dark); transform: translateY(-1px); }
@@ -385,12 +393,16 @@ h1 .accent { color: var(--primary); }
 .footer {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.5rem;
   padding: 1rem;
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 1rem);
   font-size: 0.8rem;
   color: var(--text-muted);
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .footer-dot { opacity: 0.5; }
@@ -401,18 +413,42 @@ h1 .accent { color: var(--primary); }
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
-    padding-top: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 1.5rem;
   }
   .hero-left { align-items: center; }
   .subhead { margin: 0 auto; }
-  .waitlist-form { margin: 0.6rem auto 0; }
+  .waitlist-form { margin: 0.6rem auto 0; width: 100%; max-width: 360px; }
   .chips { justify-content: center; }
-  .hero-right { order: -1; margin-bottom: 0.5rem; }
-  .phone-frame { width: 220px; height: 450px; }
+  .hero-right { order: -1; margin-bottom: 0.25rem; }
+  .phone-frame { width: 180px; height: 365px; border-width: 8px; border-radius: 34px; }
+  .phone-notch { width: 70px; height: 18px; }
+  .phone-screen { padding: 1.4rem 0.5rem 0.5rem; gap: 0.4rem; }
+  .mock-search { padding: 0.4rem 0.55rem; font-size: 0.62rem; }
+  .mock-search svg { width: 12px; height: 12px; }
+  .mock-grid { gap: 0.35rem; }
+  .mock-card { height: 92px; }
+  .mock-card.tall { height: 122px; }
+  .mock-card-body { padding: 0.35rem 0.4rem; }
+  .mock-title { font-size: 0.56rem; margin-bottom: 0.2rem; }
+  .mock-meta { font-size: 0.5rem; }
+  .mock-tag { font-size: 0.48rem; padding: 0.15rem 0.35rem; }
   .float-card { display: none; }
+}
+
+@media (max-width: 600px) {
+  .topbar { padding-top: calc(env(safe-area-inset-top, 0px) + 1rem); padding-bottom: 0.75rem; }
+  .hero { gap: 1rem; }
 }
 
 @media (max-width: 480px) {
   .waitlist-form { flex-direction: column; }
   .notify-btn { justify-content: center; }
+  .footer { flex-direction: column; gap: 0.2rem; }
+  .footer-dot { display: none; }
+}
+
+@media (max-width: 360px) {
+  .phone-frame { width: 155px; height: 320px; }
+  .chip { font-size: 0.76rem; padding: 0.3rem 0.6rem; }
 }
