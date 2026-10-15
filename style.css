@@ -10,7 +10,7 @@
   --success: #1f9d55;
   --shadow: 0 20px 50px -20px rgba(26, 21, 18, 0.18);
   --radius: 18px;
-  --font: "Noto Sans", "Noto Sans Devanagari", system-ui, -apple-system, sans-serif;
+  --font: "Poppins", "Noto Sans Devanagari", system-ui, -apple-system, sans-serif;
 }
 
 [data-theme="dark"] {
@@ -72,17 +72,15 @@ body {
   gap: 0.6rem;
 }
 
-.logo-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
+.logo-full {
+  height: 30px;
+  width: auto;
+  display: block;
 }
 
-.brand-name {
-  font-weight: 800;
-  font-size: 1.15rem;
-  letter-spacing: -0.02em;
-}
+.logo-dark { display: none; }
+[data-theme="dark"] .logo-light { display: none; }
+[data-theme="dark"] .logo-dark { display: block; }
 
 .theme-toggle {
   width: 42px;

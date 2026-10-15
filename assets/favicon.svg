@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="blabzu icon">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&amp;display=swap');
+      .b { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 40px; }
+    </style>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#FF5A3C"/>
+  <text x="15" y="45" class="b" fill="#ffffff">b</text>
+  <circle cx="44" cy="16" r="4" fill="#FFB648"/>
+</svg>

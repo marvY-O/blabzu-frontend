@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 420" role="img" aria-label="blabzu">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&amp;display=swap');
+      .wordmark { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 300px; }
+    </style>
+  </defs>
+
+  <!-- decorative dot -->
+  <circle cx="760" cy="78" r="26" fill="#FFB648"/>
+
+  <!-- big sparkle -->
+  <path d="M0,-12 C1.5,-4 4,-1.5 12,0 C4,1.5 1.5,4 0,12 C-1.5,4 -4,1.5 -12,0 C-4,-1.5 -1.5,-4 0,-12 Z"
+        fill="#F7D488" transform="translate(958,88) scale(6.6) rotate(12)"/>
+
+  <!-- small sparkle -->
+  <path d="M0,-12 C1.5,-4 4,-1.5 12,0 C4,1.5 1.5,4 0,12 C-1.5,4 -4,1.5 -12,0 C-4,-1.5 -1.5,-4 0,-12 Z"
+        fill="#E8542E" transform="translate(1048,168) scale(4.1) rotate(-12)"/>
+
+  <!-- wordmark -->
+  <text x="0" y="338" class="wordmark" fill="#F6F1EE">blab<tspan fill="#FF5A3C">z</tspan>u</text>
+</svg>
