@@ -295,7 +295,7 @@ h1 .accent { color: var(--primary); }
 }
 
 .app-logo {
-  height: 14px;
+  height: 22px;
   width: auto;
   display: block;
 }
@@ -305,6 +305,7 @@ h1 .accent { color: var(--primary); }
 [data-theme="dark"] .app-logo.logo-dark { display: block; }
 
 .app-drop-btn {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0.15rem;
@@ -312,13 +313,23 @@ h1 .accent { color: var(--primary); }
   color: #fff;
   border: none;
   font-family: var(--font);
-  font-size: 0.5rem;
+  font-size: 0.56rem;
   font-weight: 700;
-  padding: 0.22rem 0.5rem 0.22rem 0.35rem;
+  padding: 0.28rem 0.6rem 0.28rem 0.4rem;
   border-radius: 999px;
 }
 
-.app-drop-btn svg { width: 9px; height: 9px; }
+.app-drop-btn svg.plus-icon { width: 10px; height: 10px; }
+
+.app-drop-sparkle {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 11px;
+  height: 11px;
+  color: #ffd88a;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
 
 .app-tabs {
   display: flex;
@@ -721,6 +732,11 @@ h1 .accent { color: var(--primary); }
   .phone-notch { width: 70px; height: 18px; }
   .phone-screen { padding: 1.1rem 0.45rem 0.4rem; gap: 0.3rem; }
   .float-card { display: none; }
+
+  .app-logo { height: 16px; }
+  .app-drop-btn { font-size: 0.42rem; padding: 0.22rem 0.45rem 0.22rem 0.3rem; }
+  .app-drop-btn svg.plus-icon { width: 8px; height: 8px; }
+  .app-drop-sparkle { width: 9px; height: 9px; top: -4px; right: -4px; }
 
   .app-tabs { gap: 0.2rem; }
   .app-tab { font-size: 0.46rem; padding: 0.22rem 0.4rem; }
