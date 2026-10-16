@@ -562,12 +562,15 @@ h1 .accent { color: var(--primary); }
   color: var(--text-muted);
 }
 
-.demo-avatar {
+.demo-body .demo-avatar {
+  position: static;
   width: 16px;
   height: 16px;
   border-radius: 50%;
   background: var(--primary);
+  object-fit: cover;
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .demo-card-a { animation: demoCardA 9s ease-in-out infinite; }
@@ -748,7 +751,7 @@ h1 .accent { color: var(--primary); }
   .demo-body { padding: 0.45rem 0.5rem; }
   .demo-title { font-size: 0.62rem; }
   .demo-meta { font-size: 0.52rem; }
-  .demo-avatar { width: 11px; height: 11px; }
+  .demo-body .demo-avatar { width: 11px; height: 11px; }
 
   .swipe-hint { font-size: 0.46rem; padding: 0.18rem 0.38rem; }
   .swipe-hint svg { width: 9px; height: 9px; }
