@@ -113,40 +113,100 @@
     <div class="phone-frame">
       <div class="phone-notch"></div>
       <div class="phone-screen">
-        <div class="mock-search">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-          <span>Search skincare, phones, biryani…</span>
+        <div class="app-header">
+          <img src="assets/logo-mark.svg" alt="" class="app-logo logo-light">
+          <img src="assets/logo-mark-dark.svg" alt="" class="app-logo logo-dark">
+          <button class="app-drop-btn" tabindex="-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+            Drop
+          </button>
         </div>
-        <div class="mock-grid">
-          <div class="mock-card tall grad-1">
-            <img class="mock-photo" src="assets/cards/skincare.jpg" alt="" loading="lazy" decoding="async" width="480" height="480">
-            <span class="mock-tag">Sponsored</span>
-            <div class="mock-card-body">
-              <p class="mock-title">5 budget skincare picks under ₹500</p>
-              <div class="mock-meta"><span class="mock-avatar"></span> Priya · 2.1k</div>
+
+        <div class="app-tabs">
+          <span class="app-tab active">For you</span>
+          <span class="app-tab">Squad</span>
+          <span class="app-tab">Nearby</span>
+          <span class="app-tab">My buzz<span class="app-tab-dot"></span></span>
+        </div>
+
+        <div class="app-section-head">
+          <h3>Your daily drop</h3>
+          <p>No gatekeeping, just good finds</p>
+        </div>
+
+        <div class="app-swipe-wrap">
+          <div class="save-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            <span>Saved</span>
+          </div>
+
+          <div class="demo-card demo-card-b">
+            <img src="assets/cards/earphones.jpg" alt="" loading="lazy" decoding="async" width="480" height="480">
+            <div class="demo-body">
+              <p class="demo-title">Best earphones under ₹1,500</p>
+              <div class="demo-meta"><span class="demo-avatar"></span>Rahul · 980</div>
             </div>
           </div>
-          <div class="mock-card grad-2">
-            <img class="mock-photo" src="assets/cards/earphones.jpg" alt="" loading="lazy" decoding="async" width="480" height="480">
-            <div class="mock-card-body">
-              <p class="mock-title">Best earphones under ₹1,500</p>
-              <div class="mock-meta"><span class="mock-avatar"></span> Rahul · 980</div>
+
+          <div class="demo-card demo-card-a">
+            <img src="assets/cards/skincare.jpg" alt="" loading="lazy" decoding="async" width="480" height="480">
+            <span class="demo-tag">Sponsored</span>
+            <div class="demo-body">
+              <p class="demo-title">5 budget skincare picks under ₹500</p>
+              <div class="demo-meta"><span class="demo-avatar"></span>Priya · 2.1k</div>
             </div>
           </div>
-          <div class="mock-card grad-3">
-            <img class="mock-photo" src="assets/cards/cafe.jpg" alt="" loading="lazy" decoding="async" width="480" height="480">
-            <div class="mock-card-body">
-              <p class="mock-title">Hidden cafés in Koramangala</p>
-              <div class="mock-meta"><span class="mock-avatar"></span> Arjun · 1.4k</div>
+
+          <div class="touch-dot touch-dot-left"></div>
+          <div class="touch-dot touch-dot-up"></div>
+
+          <div class="swipe-hint hint-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span>Next</span>
+          </div>
+          <div class="swipe-hint hint-up">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+            <span>Save</span>
+          </div>
+        </div>
+
+        <div class="app-rabbit">
+          <div class="app-rabbit-head">
+            <h4>Your rabbit holes</h4>
+            <span>Tweak</span>
+          </div>
+          <div class="app-rabbit-grid">
+            <div class="app-rabbit-card">
+              <img src="assets/cards/cafe.jpg" alt="" loading="lazy" decoding="async" width="480" height="480">
+              <span class="app-rabbit-label">Cafés</span>
+            </div>
+            <div class="app-rabbit-card">
+              <img src="assets/cards/filter-coffee.jpg" alt="" loading="lazy" decoding="async" width="480" height="480">
+              <span class="app-rabbit-label">Coffee</span>
             </div>
           </div>
-          <div class="mock-card tall grad-4">
-            <img class="mock-photo" src="assets/cards/filter-coffee.jpg" alt="" loading="lazy" decoding="async" width="480" height="480">
-            <span class="mock-tag verified">Verified creator</span>
-            <div class="mock-card-body">
-              <p class="mock-title">Amma's filter coffee, step by step</p>
-              <div class="mock-meta"><span class="mock-avatar"></span> Meena · 3.2k</div>
-            </div>
+        </div>
+
+        <div class="app-nav">
+          <div class="app-nav-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h5v-6h4v6h5V9.5"/></svg>
+            <span>Home</span>
+          </div>
+          <div class="app-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13 13l-4.5 2.5L11 11z"/></svg>
+            <span>Discover</span>
+          </div>
+          <div class="app-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            <span>Saved</span>
+          </div>
+          <div class="app-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Inbox</span>
+          </div>
+          <div class="app-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+            <span>Profile</span>
           </div>
         </div>
       </div>
@@ -156,52 +216,6 @@
     <div class="float-card float-3">🍲 Food &amp; Eateries</div>
   </section>
 </main>
-
-<section class="swipe-section">
-  <div class="swipe-copy">
-    <span class="eyebrow">Swipe, don't scroll</span>
-    <h2>One swipe is all it takes.</h2>
-    <p class="swipe-sub">Swipe left to skip to the next find. Swipe up to save it for later. That's the whole interface.</p>
-  </div>
-
-  <div class="swipe-stage" aria-hidden="true">
-    <div class="swipe-card-wrap">
-      <div class="save-badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-        <span>Saved</span>
-      </div>
-
-      <div class="demo-card demo-card-b">
-        <img src="assets/cards/earphones.jpg" alt="" loading="lazy" decoding="async" width="480" height="480">
-        <div class="demo-body">
-          <p class="demo-title">Best earphones under ₹1,500</p>
-          <div class="demo-meta"><span class="demo-avatar"></span>Rahul · 980</div>
-        </div>
-      </div>
-
-      <div class="demo-card demo-card-a">
-        <img src="assets/cards/skincare.jpg" alt="" loading="lazy" decoding="async" width="480" height="480">
-        <span class="demo-tag">Sponsored</span>
-        <div class="demo-body">
-          <p class="demo-title">5 budget skincare picks under ₹500</p>
-          <div class="demo-meta"><span class="demo-avatar"></span>Priya · 2.1k</div>
-        </div>
-      </div>
-
-      <div class="touch-dot touch-dot-left"></div>
-      <div class="touch-dot touch-dot-up"></div>
-    </div>
-
-    <div class="swipe-hint hint-left">
-      <span class="hint-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></span>
-      <span>Swipe left for the next note</span>
-    </div>
-    <div class="swipe-hint hint-up">
-      <span class="hint-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></span>
-      <span>Swipe up to save it</span>
-    </div>
-  </div>
-</section>
 
 <footer class="footer">
   <span>&copy; 2026 blabzu. Made for India.</span>
